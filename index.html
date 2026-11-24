@@ -1,11 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bent Bladi Restaurant</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-[#fff1dc]">
+    <header
+      class="flex flex-wrap justify-between items-center px-8 py-4 bg-[#fff1dc] shadow"
+    >
+      <div class="flex items-center gap-3">
+        <span class="text-5xl">🏺</span>
+
+        <div>
+          <h1 class="text-3xl font-bold text-red-800">BENT BLADI</h1>
+
+          <p class="text-green-900 text-sm">Authentic Moroccan Cuisine</p>
+        </div>
+      </div>
+
+      <nav class="flex gap-6 items-center text-green-900 font-bold">
+        <a href="#home" class="bg-red-800 text-white px-5 py-2 rounded-full"
+          >Home</a
+        >
+        <a href="#menu" class="hover:text-red-800">Menu</a>
+        <a href="#about" class="hover:text-red-800">About</a>
+        <a href="#contact" class="hover:text-red-800">Contact</a>
+      </nav>
+
+      <a href="#contact" class="bg-red-800 text-white px-6 py-3 rounded-full">
+        ☎ Contact
+      </a>
+    </header>
+
+    <section
+      id="home"
+      class="min-h-[400px] flex items-center px-12 bg-cover bg-center"
+      style="
+        background-image:
+          linear-gradient(to right, rgba(0, 0, 0, 0.75), transparent),
+          url(&quot;https://static.vecteezy.com/system/resources/previews/077/473/915/non_2x/traditional-moroccan-tagine-feast-with-lamb-and-vegetables-free-photo.jpg&quot;);
+      "
+    >
+      <div class="text-white">
+        <h2 class="text-5xl md:text-6xl font-bold mb-5">
+          Taste the Authentic <br />
+          Moroccan Food
+        </h2>
+
+        <p class="text-xl italic mb-7">
+          Discover the delicious flavors <br />
+          of traditional Moroccan cuisine.
+        </p>
+
+        <a
+          href="#menu"
+          class="bg-red-800 text-white px-8 py-3 rounded-full text-lg hover:bg-red-950"
+        >
+          Get Started →
+        </a>
+      </div>
+    </section>
+    <section id="menu" class="px-8 py-8">
+      <h2 class="text-4xl text-green-900 font-bold text-center mb-8">
+        ✥ Our Popular Dishes ✥
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Dish 1 -->
+        <div
+          class="flex items-center gap-4 bg-[#fff8ed] p-3 rounded-2xl border-2 border-[#e5c9a5]"
+        >
+          <img
+            src="68e1c10f-7712-4012-8ffc-f96a72138665-800x530.webp"
+            class="w-1/2 h-40 object-cover rounded-xl"
+          />
+
+          <div class="text-center flex-1">
+            <h3 class="text-xl font-bold text-green-900">Chicken Tagine</h3>
+
+            <p class="text-3xl font-bold text-red-800 my-3">70 DH</p>
+
+            <button
+              onclick="book('Chicken Tagine')"
+              class="bg-red-800 text-white px-5 py-2 rounded-full hover:bg-red-950"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex items-center gap-4 bg-[#fff8ed] p-3 rounded-2xl border-2 border-[#e5c9a5]"
+        >
+          <img src="cosos.webp" class="w-1/2 h-40 object-cover rounded-xl" />
+
+          <div class="text-center flex-1">
+            <h3 class="text-xl font-bold text-green-900">Moroccan Couscous</h3>
+
+            <p class="text-3xl font-bold text-red-800 my-3">60 DH</p>
+
+            <button
+              onclick="book('Moroccan Couscous')"
+              class="bg-red-800 text-white px-5 py-2 rounded-full hover:bg-red-950"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex items-center gap-4 bg-[#fff8ed] p-3 rounded-2xl border-2 border-[#e5c9a5]"
+        >
+          <img src="bastila.jpg" class="w-1/2 h-40 object-cover rounded-xl" />
+
+          <div class="text-center flex-1">
+            <h3 class="text-xl font-bold text-green-900">Chicken Pastilla</h3>
+
+            <p class="text-3xl font-bold text-red-800 my-3">65 DH</p>
+
+            <button
+              onclick="book('Chicken Pastilla')"
+              class="bg-red-800 text-white px-5 py-2 rounded-full hover:bg-red-950"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="px-10 py-8 bg-[#f5d2a4]">
+      <h2 class="text-4xl font-bold text-green-900 mb-3">✥ About Us</h2>
+
+      <p class="text-lg italic text-[#442c1d]">
+        Bent Bladi brings you the best of Moroccan cuisine,
+        <br />
+        made with fresh ingredients and lots of love.
+      </p>
+    </section>
+    <footer
+      id="contact"
+      class="bg-green-950 text-white flex flex-col md:flex-row justify-between items-center px-10 py-5 gap-4"
+    >
+      <p>© 2026 BENT BLADI. All Rights Reserved.</p>
+
+      <div class="flex gap-5 text-2xl">
+        <a href="#">f</a>
+        <a href="#">◎</a>
+        <a href="#">▶</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
